@@ -48,7 +48,7 @@ for (let i = 0; i < field.length; i++) {
 
 function addLeadingZero(number) {
   const numberToString = number.toString();
-  numberToString.padStart(2, '0');
+  return numberToString.padStart(2, '0');
 }
 
 function convertMs(ms) {
@@ -90,10 +90,4 @@ function timeInHtml(timeLeft) {
   timerHours.textContent = addLeadingZero(hours);
   timerMins.textContent = addLeadingZero(minutes);
   timerSecs.textContent = addLeadingZero(seconds);
-  console.log(
-    addLeadingZero(days),
-    addLeadingZero(hours),
-    addLeadingZero(minutes),
-    addLeadingZero(seconds)
-  );
 }
