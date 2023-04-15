@@ -1,7 +1,7 @@
 const [form] = document.getElementsByClassName('form');
-form.addEventListener('submit', onClickFunc);
+form.addEventListener('submit', onButtonClick);
 
-function onClickFunc(event) {
+function onButtonClick(event) {
   event.preventDefault();
   const input = event.target.elements;
 
