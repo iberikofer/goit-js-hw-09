@@ -12,9 +12,6 @@ function onButtonClick(event) {
   console.log('Зараз буде черга Промісів');
 
   for (let position = 1; position <= amount; position++, promiseDelay += step) {
-    console.log('position', position);
-    console.log('amount', amount);
-    console.log('promiseDelay', promiseDelay);
     createPromise(position, promiseDelay)
       .then(({ position, delay }) => {
         console.log(`✅ Fulfilled promise ${position} in ${delay}ms`);
